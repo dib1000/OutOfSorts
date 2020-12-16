@@ -6,14 +6,18 @@ public class Sorts{
   */
   public static void bubbleSort(int[] data){
     for(int i = data.length-1; i>0; i--) {
+      int switches = 0;
       for(int j = 0; j<i; j++) {
         if(data[j]>data[j+1]) {
+          switches++;
           int storage = data[j+1];
           data[j+1] = data[j];
           data[j] = storage;
         }
       }
-      System.out.println(Arrays.toString(data));
+      if(switches==0) {
+        break;
+      }
     }
   }
 }

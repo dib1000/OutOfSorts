@@ -6,7 +6,10 @@ public class Tester {
     int[] b = {2,3,4,5,1};
     int[] c = {6,1,2,3,4,5};
     Sorts.bubbleSort(a);
+    System.out.println(Arrays.toString(a));
     Sorts.bubbleSort(b);
+    System.out.println(Arrays.toString(b));
     Sorts.bubbleSort(c);
+    System.out.println(Arrays.toString(c));
   }
 }
