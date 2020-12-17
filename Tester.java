@@ -3,6 +3,7 @@ import java.util.Random;
 
 public class Tester {
   public static void main(String[] args) {
+    System.out.println("TESTING bubbleSort");
     int[] a = {5,1,12,-5,16};
     int[] b = {2,3,4,5,1};
     int[] c = {6,1,2,3,4,5};
@@ -49,5 +50,12 @@ public class Tester {
         System.out.println(ran);
       }
     }
+    System.out.println();
+
+    System.out.println("TESTING selectionSort");
+    int[] sa = {64,25,12,22,11};
+    Sorts.selectionSort(sa);
+    System.out.println(Arrays.toString(sa));
+
   }
 }
