@@ -54,8 +54,25 @@ public class Tester {
 
     System.out.println("TESTING selectionSort");
     int[] sa = {64,25,12,22,11};
+    int[] sr = {54,54,65,43,43,59,122,34,43};
+    int[] sn = {-46,-42,-42,56,32,-13,-44};
+    int[] six = {6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6};
+    int[] fr = {-2,-1,0,1,2,3,4,5};
+    int[] bk = {5,4,3,2,1,0,-1,-2};
     Sorts.selectionSort(sa);
     System.out.println(Arrays.toString(sa));
+    Sorts.selectionSort(d);
+    System.out.println(Arrays.toString(d));
+    Sorts.selectionSort(sr);
+    System.out.println(Arrays.toString(sr));
+    Sorts.selectionSort(sn);
+    System.out.println(Arrays.toString(sn));
+    Sorts.selectionSort(six);
+    System.out.println(Arrays.toString(six));
+    Sorts.selectionSort(fr);
+    System.out.println(Arrays.toString(fr));
+    Sorts.selectionSort(bk);
+    System.out.println(Arrays.toString(bk));
 
   }
 }
