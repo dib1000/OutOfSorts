@@ -73,6 +73,25 @@ public class Tester {
     System.out.println(Arrays.toString(fr));
     Sorts.selectionSort(bk);
     System.out.println(Arrays.toString(bk));
+    System.out.println();
 
+    System.out.println("TESTING insertionSort");
+    int[] ia = {4,3,2,10,12,1,5,6};
+    int[] s = {6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6};
+    int[] ir = {1,2,3,4,5};
+    int[] fi = {25,24,23,22,21};
+    int[] ri = {46,46,55,22,22,990,67,454,236,990,4444,23};
+    Sorts.insertionSort(ia);
+    System.out.println(Arrays.toString(ia));
+    Sorts.insertionSort(d);
+    System.out.println(Arrays.toString(d));
+    Sorts.insertionSort(s);
+    System.out.println(Arrays.toString(s));
+    Sorts.insertionSort(fi);
+    Sorts.insertionSort(ir);
+    Sorts.insertionSort(ri);
+    System.out.println(Arrays.toString(fi));
+    System.out.println(Arrays.toString(ir));
+    System.out.println(Arrays.toString(ri));
   }
 }

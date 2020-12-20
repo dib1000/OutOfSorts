@@ -34,4 +34,23 @@ public class Sorts{
       data[minimumIndex] = storage;
     }
   }
+
+  public static void insertionSort(int[] data) {
+    for(int i = 1; i<data.length; i++) {
+      if(data[i-1]>data[i]) {
+        int switches = 0;
+        int storage = data[i];
+        for(int j = i-1; j>=0; j--) {
+          if(data[j]>storage) {
+            switches+=1;
+            data[j+1] = data[j];
+          }
+          else {
+            break;
+          }
+        }
+        data[i-switches] = storage;
+      }
+    }
+  }
 }
