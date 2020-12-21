@@ -17,21 +17,22 @@ public class Driver{
         for(int i = 0; i<randData.length; i++) {
           randData[i] = rng.nextInt() % 1000;
         }
-        System.out.println(Arrays.toString(randData));
       }else if(args[2].equals("equal")){
         for(int i = 0; i<randData.length; i++) {
           randData[i] = 0;
         }
-        System.out.println(Arrays.toString(randData));
       }else if(args[2].equals("sorted")){
 	      int x = 0;
         while(x<randData.length) {
           randData[x] = x;
           x++;
         }
-        System.out.println(Arrays.toString(randData));
       }else if(args[2].equals("reversed")){
-	      System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
+	      int y = 0;
+        while(y<randData.length) {
+          randData[y] = randData.length-y;
+          y++;
+        }
       }
 
       if(args[1].equals("bubble")){
