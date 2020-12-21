@@ -24,7 +24,12 @@ public class Driver{
         }
         System.out.println(Arrays.toString(randData));
       }else if(args[2].equals("sorted")){
-	      System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
+	      int x = 0;
+        while(x<randData.length) {
+          randData[x] = x;
+          x++;
+        }
+        System.out.println(Arrays.toString(randData));
       }else if(args[2].equals("reversed")){
 	      System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
       }
