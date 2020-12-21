@@ -75,6 +75,28 @@ public class Tester {
     System.out.println(Arrays.toString(bk));
     System.out.println();
 
+    System.out.println("Testing random lists with selectionSort");
+    for(int i = 0; i<15; i++) {
+      int rans = (int) (Math.random()*500);
+      Random rngs = new Random(rans);
+      int lens = (int)(Math.random()*100);
+      int[] xs = new int[lens];
+      for(int j = 0; j<lens; j++) {
+        xs[j] = rngs.nextInt() % 1000;
+      }
+      int[] bxs = xs;
+      Arrays.sort(xs);
+      Sorts.selectionSort(bxs);
+      if(Arrays.toString(xs).equals(Arrays.toString(bxs))) {
+        System.out.println("PASSED");
+      }
+      else {
+        System.out.println("FAIL");
+        System.out.println(rans);
+      }
+    }
+    System.out.println();
+
     System.out.println("TESTING insertionSort");
     int[] ia = {4,3,2,10,12,1,5,6};
     int[] s = {6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6};
@@ -93,5 +115,28 @@ public class Tester {
     System.out.println(Arrays.toString(fi));
     System.out.println(Arrays.toString(ir));
     System.out.println(Arrays.toString(ri));
+    System.out.println();
+
+    System.out.println("Testing random lists with insertionSort");
+    for(int i = 0; i<15; i++) {
+      int rani = (int) (Math.random()*500);
+      Random rngi = new Random(rani);
+      int leni = (int)(Math.random()*100);
+      int[] xi = new int[leni];
+      for(int j = 0; j<leni; j++) {
+        xi[j] = rngi.nextInt() % 1000;
+      }
+      int[] bxi = xi;
+      Arrays.sort(xi);
+      Sorts.bubbleSort(bxi);
+      if(Arrays.toString(xi).equals(Arrays.toString(bxi))) {
+        System.out.println("PASSED");
+      }
+      else {
+        System.out.println("FAIL");
+        System.out.println(rani);
+      }
+    }
+    System.out.println();
   }
 }
